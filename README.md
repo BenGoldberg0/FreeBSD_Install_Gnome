@@ -6,7 +6,7 @@ run the following:
 
     mkdir <whatever you want to name it>
 
-    git clone <link>
+    git clone https://github.com/PokerPlayer2000/FreeBSD_Install_Gnome
 
     chmod +x GnomeInstallOnFreeBSD.sh
 
