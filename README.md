@@ -1,15 +1,17 @@
 install FreeBSD from the latest DVD1.iso file available on freebsd.org
 
+upgrade pkg, install sudo, and install git.
+
 login as whomever
 
 run the following:
 
-    mkdir <whatever you want to name it>
+    sudo git clone https://github.com/PokerPlayer2000/FreeBSD_Install_Gnome
 
-    git clone https://github.com/PokerPlayer2000/FreeBSD_Install_Gnome
+    cd freebsd_install_gnome
 
-    chmod +x GnomeInstallOnFreeBSD.sh
+    chmod +x main.sh
 
-    sudo ./GnomeInstallOnFreeBSD.sh
+    sudo ./main.sh
     
 Goodluck. Hopefully this works for you.
