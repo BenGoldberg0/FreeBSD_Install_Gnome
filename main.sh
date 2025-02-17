@@ -9,6 +9,7 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
+# Check if running on FreeBSD
 echo "Installing GNOME and other stuff"
 
 # Update package repository
@@ -55,6 +56,6 @@ EOF
 # Configure .xinitrc for users who want to start GNOME manually
 echo 'exec gnome-session' > /usr/local/etc/X11/xinit/xinitrc
 
-echo "Installation complete! Please reboot your system."
+echo "Installation complete! Please reboot but first read the following:"
 echo "After reboot, GNOME will start automatically via GDM."
-echo "Alternatively, you can start it manually with 'startx' after logging in."
+echo "Alternatively, you can start it manually with 'startx' after logging in but there is no point."
