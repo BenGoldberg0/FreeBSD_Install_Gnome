@@ -13,13 +13,13 @@ fi
 echo "Installing GNOME and other stuff"
 
 # Update package repository
-pkg update
+pkg update && pkg upgrade -y
 
 # Install XOrg
 pkg install -y xorg
 
 # Install GNOME
-pkg install -y gnome-desktop gdm xdg-user-dirs dbus
+pkg install -y gnome
 
 # Enable required services in rc.conf
 sysrc dbus_enable="YES"
