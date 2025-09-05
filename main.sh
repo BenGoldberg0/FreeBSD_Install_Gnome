@@ -27,9 +27,9 @@ sysrc gnome_enable="YES"
 sysrc linux_enable="YES"
 
 # configure linprocfs for Linux compatibility
+mkdir -p /compat/linux/proc
 if ! mount | grep -q "^linprocfs"; then
     echo "linprocfs     /compat/linux/proc     linprocfs     rw     0     0" >> /etc/fstab
-    mkdir -p /compat/linux/proc
     mount linprocfs /compat/linux/proc
 fi
 
